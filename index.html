@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WebDesign</title>
+    <!-- HTMLにファビコンとスマホ用Web Clipアイコンを設定（head要素内） -->
+    <!-- ※title要素の下に記述する場合が多い。 -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <!-- CSSはタイトルの後ろに設定 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- reset.cssはstyle.cssの前に設定 -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="top">
+    <div class="container">
+        <!-- サイト共通の上部エリア -->
+        <header>
+            <!-- サイト名は大見出しh1を設定する -->
+            <h1><a href="index.html">WebDesign</a></h1>
+            <!-- メニューはリストul-liを設定する -->
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="next.html">下層ページの構成</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <!-- /サイト共通の上部エリア -->
+
+        <!-- ［メインビジュアル］ -->
+        <p class="main-visual"><img src="img/web.jpg" alt="Webページ制作言語"></p>
+        <!-- /［メインビジュアル］ -->
+
+        <!-- 各ページで内容が異なるエリア -->
+        <main>
+            <section>
+                <h2>TOPページの見出し</h2>
+                <p>TOPページの大見出し（h1）はサイト名に設定するので、mainタグ内は中見出し（h2）から使い始める。</p>
+            </section>
+            <section>
+                <h2>セクションとは</h2>
+                <p>見出しとその内容は、sectionタグでグループ化する。小見出しがある場合、中見出し（h2）のsectionの中に小見出し（h3）のsectionが入ることもある。</p>
+            </section>
+            <aside>
+                <p>バナーや注意書き、サイドバーなどの補足情報はasideで囲む。</p>
+            </aside>
+        </main>
+        <!-- /各ページで内容が異なるエリア -->
+    </div>
+
+    <!-- サイト共通の下部エリア -->
+    <footer>
+        <p class="pagetop"><a href="#top"><img src="img/gotop.svg" width="32" alt="ページトップへ"></a></p>
+        <p class="copyright">
+            <small>
+                &copy;2021 WebDesign.
+                <span>All Rights Reserved.</span>
+            </small>
+        </p>
+    </footer>
+    <!-- /サイト共通の下部エリア -->
+
+</body>
+</html>
